@@ -8,8 +8,8 @@ const routerBidon = Router();
 
 const server = express();
 
-server.use('/users', userRouter);
 server.use(loggerMiddleware);
+server.use('/users', userRouter);
 
 server.get('/', (request, response) => {
     console.log('Je suis la route bidon');

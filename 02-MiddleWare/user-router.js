@@ -5,6 +5,8 @@ const userRouter = Router();
 
 userRouter.get('/users', (request, response) => {
     response.send('Bienvenue sur la route users');
-}).use(authorize)
+})
+
+userRouter.use(authorize)
 
 exports.userRouter = userRouter;
