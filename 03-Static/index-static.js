@@ -2,7 +2,6 @@ const express = require('express');
 
 const server = express();
 
-// Il lui faut absolument un chemin absolu à cette endroit-là
 server.use('/assets', express.static(__dirname + '/assets'))
 server.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html')
