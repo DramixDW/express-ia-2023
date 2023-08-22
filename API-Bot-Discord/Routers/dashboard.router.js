@@ -5,7 +5,7 @@ const dashboardRouter = Router();
 
 dashboardRouter.use(secretMiddleware);
 dashboardRouter.get('/', (request, response) => {
-    response.send('<h1>Dashboard</h1>')
+    response.sendFile('/Users/dramix/cours/express-ia-2023/API-Bot-Discord/views/dashboard.html');
 })
 
 
