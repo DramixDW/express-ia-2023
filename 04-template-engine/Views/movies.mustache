@@ -7,5 +7,14 @@
 </head>
 <body>
    {{ message }} 
+   {{! La section ne sera pas visible si }}
+   {{! movies = false, movies = undefined , movies = []}}
+   <ul>
+    {{#movies}}
+        {{#listElement}}
+            {{ title }}
+        {{/listElement}}
+    {{/movies}}
+   </ul>
 </body>
 </html>
